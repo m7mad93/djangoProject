@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for foo in carg %}
+    <h1>{{ foo.name }}</h1>
+    <br>
+    <br>
+
+{% endfor %}
+{% for foo in pro %}
+    <h1>{{ foo.name}}</h1>
+    <h2>{{ foo.price }}</h2>
+    <br>
+    <br>
+{% endfor %}
+
+{% for foo in te %}
+    <h1>{{ foo.created }}</h1>
+    <br>
+    <br>
+{% endfor %}
+
+{% for foo in ca %}
+    <h1>{{ foo.name }}</h1>
+    <h2>{{ foo.price }}</h2>
+    <br>
+    <br>
+
+{% endfor %}
+
+
+{% endblock %}
